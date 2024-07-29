@@ -53,7 +53,7 @@ func getHeader() string{
 	currentTime := time.Now().Format("03:04:05 PM")
 
 	currDir = strings.Replace(string(currDir),"/home/majjikishore","~",1)
-	header := fmt.Sprintf("%s@%s:%s─%s ->", userName, hostName, currDir, currentTime)
+	header := fmt.Sprintf("[%s@%s]:[%s─%s]$ ", userName, hostName, currDir, currentTime)
 
 	return header
 }
